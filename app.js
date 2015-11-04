@@ -23,4 +23,14 @@
   superFormName.addEventListener('input', () => {
     superName.innerHTML = `My Name is: ${superFormName.value}`;
   });
+
+  var makeMeBlink = document.querySelector('.blink');
+
+  window.setInterval(() => {
+    if (makeMeBlink.style.display === 'none') {
+      makeMeBlink.style.display = '';
+    } else {
+      makeMeBlink.style.display = 'none';
+    }
+  }, 1000);
 })();
